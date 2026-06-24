@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Portfolio</title>
+	<style>
+		*{
+			margin:0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: arial, sans-serif;
+		}
+		body{
+			background: #0f172a;
+			color: #fff;
+		}
+		header{
+			display:flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 20px 50px;
+			background: 111827;
+			position: sticky;
+			top: 0;
+		}
+		.logo{
+			font-size: 22px;
+			font-weight: bold;
+			color: #38bdf8;
+		}
+		nav a{
+			color: #fff;
+			margin-left: 20px;
+			text-decoration: none;
+
+		}
+		nav a:hover{
+			color: #38bdf8;
+
+		}
+		.hero{
+			height: 90vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			padding: 20px;
+		}
+		.hero h1{
+			font-size: 48px;
+
+		}
+		.hero span{
+			color: 38bdf8;
+		}
+		.hero p{
+			margin-top: 15px;
+			max-width: 600px;
+			color: #cbd5e1;
+		}
+		.btn{
+			margin-top: 20px;
+			padding: 10px 20px;
+			background: #38bdf8;
+			border: none;
+			cursor: pointer;
+			color: #000;
+			font-weight:bold ;
+			border-radius: 5px;
+		}
+		section{
+			padding: 60px 50px;
+		}
+		.section-title{
+			font-size: 32px;
+			margin-bottom: 20px;
+			color: #38bdf8;
+		}
+		.about .projects .contact{
+			max-width: 1000px;
+			margin: auto;
+		}
+		.projects-grid{
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			gap: 20px;
+		}
+		.card{
+			background: #1f2937;
+			padding: 20px;
+			border-radius: 10px;
+			transition: 0.3s;
+		}
+		.card:hover{
+			transform: translateY(-5px);
+		}
+		footer{
+			text-align: center;
+			padding: 20px;
+			background: #111827;
+			margin-top: 40px;
+		}
+
+	</style>
+</head>
+<body>
+<header>
+	<div class="logo">MyPortfolio</div>
+	<nav>
+		<a href="#home">Home</a>
+		<a href="#about">About</a>
+		<a href="#projects">Projects</a>
+		<a href="#contact">Contact</a>
+
+	</nav>
+</header>
+<section class="hero" id="home">
+	<h1>Hi, I`m <span> Mohammad Aamir</span></h1>
+	<p> I am Wed Developer building modren, responsive website using HTML, CSS and JAVASRCIPT.</p>
+	<button class="btn" onclick="scrollToContact()">Hire Me
+	</button>
+</section>
+<section class="about" id="about">
+	<h2 class="section-title">About Me</h2>
+	<p>
+		I am a passionate web developer learning full stack development. I enjoy building real-world projects and improving my coding skills every day.</p>
+</section>
+<section class="projects" id="projects">
+	<h2 class="section-title">projects</h2>
+	<div class="prrojects-grid">
+		<div class="card">Portfolio Website</div>
+		<div class="card">E-commerce Website</div>
+		<div class="card">To-DO App</div>
+		<div class="card">Calculator App</div>
+	</div>
+	
+</section>
+<section class="contact" id="contact">
+	<h2 class="section-title">Contact Me</h2>
+	<p>Email: baigamir091@gmail.com</p>
+	<p>Pone: +923132333141</p>
+	<p>Whatsapp: +923132333141 </p>
+</section>
+<footer>
+	<p>&copy;2026 my Portfolio. All Rights Reserved.</p>
+</footer>
+<script>
+	function scrollToContact(){
+		document.getElementByIdName('contact').scrollIntoView({behavior:'smooth'});
+	}
+</script>
+</body>
+</html>
